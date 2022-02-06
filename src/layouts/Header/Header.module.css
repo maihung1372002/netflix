@@ -1,0 +1,145 @@
+.wrap{
+    height: var(--header-height);
+    background-color: var(--black-color);
+}
+.logo{
+    width: 120px;
+    height: var(--header-height);
+}
+.logo img{
+    height: var(--header-height);
+}
+.nav{
+    flex: 1;
+    align-items: center;
+}
+.nav a{
+    text-transform: uppercase;
+}
+.listNav{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.listNav > li{
+    position: relative;
+    height: var(--header-height);
+}
+.listNav li:hover > a{
+    cursor: pointer;
+    color: var(--red-color);
+}
+.listNav > li:hover > a{
+    font-weight: 600;
+    margin: 0 1px;
+}
+.listNav > li > a{
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding: 0 16px;
+    line-height: var(--header-height);
+    transition: all linear 0.1s;
+}
+
+/* nav right */
+
+.listNavRight{
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    position: relative;
+}
+.navRightItem{
+    margin-left: 16px;
+}
+.icon svg{
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 18px;
+}
+.icon:hover svg{
+    cursor: pointer;
+    color: var(--red-color);
+}
+.avatar img{
+    width: 30px;
+    border-radius: 50%;
+}
+.input{
+    position: absolute;
+    top: calc(100% + 20px);
+    display: flex;
+    right: 0;
+    padding:  16px;
+    align-items: center;
+    background-color: var(--black-color);
+    display: none;
+    transition: all linear 0.3s;
+}
+.input input{
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    background-color: var(--black-color);
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+
+
+/* sub nav */
+.subNav{
+    position: absolute;
+    top:100%;
+    padding: 16px;
+    background-color: var(--black-color);
+    min-width: 160px;
+    display: none;
+    transition: all linear 0.05s;
+}
+.subNavItem{
+    position: relative;
+    transition: all ease-in-out 0.2s;
+    padding:2px 4px ;
+}
+.subNav > li > a{
+    color: var(--text-color);
+    font-size: 12px;
+    line-height: 32px;
+}
+.nav li:hover> .subNav{
+    display: block;
+} 
+.subNavRight{
+    top: 0;
+    right: calc(100% + 16px);
+}
+.subNavRight::after{
+    content: ' ';
+    width: 16px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: -16px;
+}
+.subNavItem::after{
+    content: ' ';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    height: 100%;
+    width: 0;
+    transition: all ease-in-out 0.3s;
+}
+.subNavItem:hover::after{
+    width: calc(100% + 4px);
+    border-left: 4px solid var(--red-color);
+    background:linear-gradient(to right,rgb(191, 0, 10,0.6) , rgb(191, 0, 10,0) ) ;
+}
+
+
+/* search */
