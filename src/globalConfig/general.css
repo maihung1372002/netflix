@@ -14,6 +14,7 @@ body {
 
 * {
     box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
 }
 ul{
     padding: 0;
@@ -42,4 +43,14 @@ a{
 }
 .brTopLeft{
   border-top-left-radius: 3px;
+}
+.dpnone{
+  display: none;
+}
+.bornone{
+  border: none !important;
+}
+.alignCenter{
+  align-items: center;
+  display: flex;
 }

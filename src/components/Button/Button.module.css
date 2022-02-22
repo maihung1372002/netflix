@@ -1,0 +1,86 @@
+.play a,.noneBackground a{
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    color:#fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.play a{
+    background-color: var(--red-color);
+}
+
+.noneBackground:hover a{
+    color: var(--red-color);
+    font-weight: 300;
+}
+.play a::before,.play a::after{
+    content: ' ';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all ease-out 0.3s;
+    background-color: rgba(27, 27, 27, 0.3);
+}
+.play a::before{
+    left: 100%;
+}
+.play a::after{
+    right: 100%;
+}
+.play a:hover::before{
+    transform: translateX(-100%);
+    width: 50%;
+}
+.play a:hover::after{
+    transform: translateX(100%);
+    width: 50%;
+}
+
+/* btn svg */
+.svgItem{
+    width: fit-content;
+    margin: auto;
+}
+.svgItem span{
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #fff;
+    position: relative;
+    top: 2px;
+    letter-spacing: 1.5px;
+}
+.svg{
+    vertical-align: middle;
+}
+.triangle,.circle{
+    stroke-width: 2;
+    fill:none;
+    stroke-linecap: round;
+    transition: all ease-in-out 0.5s;
+    stroke:#fff;
+}
+.svgItem:hover .triangle{
+    stroke-dashoffset: 6;
+    stroke: var(--red-color);
+}
+.svgItem:hover .circle{
+    stroke: var(--red-color);
+    stroke-dashoffset: 0;
+}
+.triangle{
+    stroke-dashoffset: 206;
+    stroke-dasharray: 100;
+}
+.circle{
+    stroke-dashoffset: 300;
+    stroke-dasharray: 300;
+}
+
+
+/* swipe */
+

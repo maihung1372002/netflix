@@ -1,0 +1,15 @@
+.wrap{
+    margin-top: var(--header-height);
+}
+.btnSwipe{
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+}
+.btnRight{
+    right: 0;
+    transform: translateX(-50%);
+}
+.btnLeft{
+    transform: translateX(50%);
+}

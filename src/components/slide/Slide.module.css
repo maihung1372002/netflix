@@ -1,0 +1,71 @@
+.wrap{
+    height: 85vh;
+}
+.background{
+    height: 100%;
+    background:linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(36, 36, 36, 1) 35%, rgba(83, 100, 141, 0) 100%); 
+    position: relative;
+}
+.body{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.bigTitle{
+    background-clip: text;
+    color: transparent;
+    /* font-family: 'Helvetica Neue Regular'; */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0;
+}
+.wrapDetails{
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 10px; */
+}
+.wrapDetails p{
+    margin-top: 24px;
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.ageTime ,.rating{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.rating{
+    width: 180px;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+.rating span{
+    font-size: 14px;
+    display: block ;
+}
+
+.button{
+    display: flex;
+    margin-top: 40px;
+}
+.button a{
+    margin-right: 16px;
+    display: block;
+}
+.button svg{
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+}
+.playTrailer{
+    text-align: center;
+    margin-top: 32px;
+}

@@ -1,0 +1,44 @@
+.mannerAge{
+    padding: auto;
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 8px;
+    background-color: var(--gray-color);
+    border-radius: 3px;
+}
+.starFront{
+    --font-size:16px;
+    color: #ccc;
+    position: relative;
+    width: fit-content;
+    display: flex;
+}
+.starFront svg{
+    margin-right: 4px;
+}
+
+.starBack{
+    position: absolute;
+    color: var(--red-color);
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+}
+.starBack svg{
+    flex-grow: 1;
+    min-width: 16px;
+}
+
+/* Primary text */
+.primary{
+    color: var(--red-color);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.content{
+    color: var(--text-color);
+    font-size: 15px;
+}
